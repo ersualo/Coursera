@@ -28,7 +28,7 @@ class Auto {
             default:
                 self.velocidad = .VelocidadMedia
         }
-        return (actual : tmp.rawValue, String(Velocidades(rawValue: tmp.rawValue)!))
+        return (actual : tmp.rawValue, String(Velocidades(velocidadInicial: tmp)))
     }
 }
 
