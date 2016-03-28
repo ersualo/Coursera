@@ -17,33 +17,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hamburguesas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9o-ti-FEk">
-                                <rect key="frame" x="216" y="275" width="218" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburguesas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9o-ti-FEk">
+                                <rect key="frame" x="211" y="263" width="178" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqp-u2-7hK">
-                                <rect key="frame" x="216" y="488" width="168" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paises" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52W-PJ-VpS">
+                                <rect key="frame" x="211" y="83" width="178" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="178" id="k27-qX-zS3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqp-u2-7hK">
+                                <rect key="frame" x="226" y="429" width="148" height="30"/>
                                 <state key="normal" title="Dame Hamburguesas"/>
                                 <connections>
                                     <action selector="cambiarPaisHamburguesa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FQk-YC-njp"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Paises" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52W-PJ-VpS">
-                                <rect key="frame" x="216" y="144" width="277" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WC2-ZQ-GCI">
+                                <rect key="frame" x="226" y="429" width="148" height="30"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WC2-ZQ-GCI" firstAttribute="bottom" secondItem="Sqp-u2-7hK" secondAttribute="bottom" id="9Bl-xc-ywE"/>
+                            <constraint firstItem="WC2-ZQ-GCI" firstAttribute="centerX" secondItem="z9o-ti-FEk" secondAttribute="centerX" id="9ns-H8-RvH"/>
+                            <constraint firstItem="z9o-ti-FEk" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="DI7-Oe-ZW9"/>
+                            <constraint firstItem="52W-PJ-VpS" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="EDe-4H-dsx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WC2-ZQ-GCI" secondAttribute="bottom" constant="141" id="Fud-HM-3tz"/>
+                            <constraint firstItem="WC2-ZQ-GCI" firstAttribute="top" secondItem="Sqp-u2-7hK" secondAttribute="top" id="LrN-kI-WDy"/>
+                            <constraint firstItem="WC2-ZQ-GCI" firstAttribute="leading" secondItem="Sqp-u2-7hK" secondAttribute="leading" id="Mzh-Ml-f5F"/>
+                            <constraint firstItem="52W-PJ-VpS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aKE-pa-hy3"/>
+                            <constraint firstItem="WC2-ZQ-GCI" firstAttribute="trailing" secondItem="Sqp-u2-7hK" secondAttribute="trailing" id="bfh-OY-zo7"/>
+                            <constraint firstItem="z9o-ti-FEk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i6f-fZ-S4N"/>
+                            <constraint firstItem="z9o-ti-FEk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="263" id="iLa-X1-CPm"/>
+                            <constraint firstItem="z9o-ti-FEk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lhn-Ka-tBt"/>
+                            <constraint firstItem="52W-PJ-VpS" firstAttribute="leading" secondItem="z9o-ti-FEk" secondAttribute="leading" id="wmQ-MI-1f6"/>
+                            <constraint firstItem="52W-PJ-VpS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="63" id="yUE-Bs-zNC"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="EDe-4H-dsx"/>
+                                <exclude reference="DI7-Oe-ZW9"/>
+                                <exclude reference="i6f-fZ-S4N"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
-                        <outlet property="hamburguesas" destination="z9o-ti-FEk" id="9Sg-gc-csP"/>
                         <outlet property="lblHamburguesas" destination="z9o-ti-FEk" id="lwe-I5-uGx"/>
                         <outlet property="lblPaises" destination="52W-PJ-VpS" id="ZwK-zN-VEk"/>
-                        <outlet property="paises" destination="52W-PJ-VpS" id="EN3-J5-so9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
