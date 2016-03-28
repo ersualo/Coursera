@@ -32,25 +32,25 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqp-u2-7hK">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WC2-ZQ-GCI">
                                 <rect key="frame" x="226" y="429" width="148" height="30"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqp-u2-7hK">
+                                <rect key="frame" x="226" y="391" width="148" height="30"/>
                                 <state key="normal" title="Dame Hamburguesas"/>
                                 <connections>
                                     <action selector="cambiarPaisHamburguesa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FQk-YC-njp"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WC2-ZQ-GCI">
-                                <rect key="frame" x="226" y="429" width="148" height="30"/>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WC2-ZQ-GCI" firstAttribute="bottom" secondItem="Sqp-u2-7hK" secondAttribute="bottom" id="9Bl-xc-ywE"/>
+                            <constraint firstItem="WC2-ZQ-GCI" firstAttribute="bottom" secondItem="Sqp-u2-7hK" secondAttribute="bottom" constant="38" id="9Bl-xc-ywE"/>
                             <constraint firstItem="WC2-ZQ-GCI" firstAttribute="centerX" secondItem="z9o-ti-FEk" secondAttribute="centerX" id="9ns-H8-RvH"/>
                             <constraint firstItem="z9o-ti-FEk" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="DI7-Oe-ZW9"/>
                             <constraint firstItem="52W-PJ-VpS" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="EDe-4H-dsx"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WC2-ZQ-GCI" secondAttribute="bottom" constant="141" id="Fud-HM-3tz"/>
-                            <constraint firstItem="WC2-ZQ-GCI" firstAttribute="top" secondItem="Sqp-u2-7hK" secondAttribute="top" id="LrN-kI-WDy"/>
+                            <constraint firstItem="WC2-ZQ-GCI" firstAttribute="top" secondItem="Sqp-u2-7hK" secondAttribute="top" constant="38" id="LrN-kI-WDy"/>
                             <constraint firstItem="WC2-ZQ-GCI" firstAttribute="leading" secondItem="Sqp-u2-7hK" secondAttribute="leading" id="Mzh-Ml-f5F"/>
                             <constraint firstItem="52W-PJ-VpS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aKE-pa-hy3"/>
                             <constraint firstItem="WC2-ZQ-GCI" firstAttribute="trailing" secondItem="Sqp-u2-7hK" secondAttribute="trailing" id="bfh-OY-zo7"/>
@@ -75,7 +75,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="521" y="358"/>
+            <point key="canvasLocation" x="796" y="337"/>
         </scene>
     </scenes>
 </document>
