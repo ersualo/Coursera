@@ -21,3 +21,11 @@ for(var numero:Int=0; numero<=100; numero+=1){
 
 
 
+
+var datos = [ 500 : "Gabriel", 400 : "Hesse", 300 : "Martín", 200 : "Juan", 100: "Isabella" ]
+
+var datos2 = [ 500 , 400 , 300 , 200 , 100 ]
+
+var datos3 : [String] = [ 500 : "Gabriel", 400 : "Hesse", 300 : "Martín", 200 : "Juan", 100: "Isabella" ]
+
+var datos4 = [ 500 , "Gabriel", 400 , "Hesse", 300 , "Martín", 200 , "Juan", 100, "Isabella" ]
